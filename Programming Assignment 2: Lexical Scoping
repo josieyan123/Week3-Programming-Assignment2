@@ -19,7 +19,7 @@ cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
               m <- x$getinverse()       #calls th getinverse() function on the input object 
               if(!is.null(m)){          #checks to see whether the result is NUL. 
-                message("getting cashed data") #if(!is.mull(m)) is true, return"getting cashed data"
+                message("getting cashed data") #if(!is.null(m)) is true, return"getting cashed data"
                 return(m)               #if(!is.null(m))is faluse,cacheSolve() inverses the matrix from the input object. 
               }
               data <- x$get()
